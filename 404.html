@@ -14,8 +14,8 @@
         }
 
         body {
-            background: #0f0c29;
-            background: linear-gradient(135deg, #24243e, #302b63, #0f0c29);
+            background: #050505;
+            background: linear-gradient(135deg, #0a0a0a, #111111, #050505);
             height: 100vh;
             display: flex;
             align-items: center;
@@ -27,11 +27,11 @@
         .container {
             text-align: center;
             padding: 40px;
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(0, 0, 0, 0.6);
             backdrop-filter: blur(10px);
             border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 25px 45px rgba(0,0,0,0.2);
+            border: 1px solid rgba(0, 255, 102, 0.2);
+            box-shadow: 0 25px 45px rgba(0,0,0,0.5);
             max-width: 500px;
             width: 90%;
         }
@@ -40,10 +40,10 @@
             font-size: 120px;
             font-weight: 800;
             margin-bottom: 0;
-            background: linear-gradient(to right, #ff416c, #ff4b2b);
+            background: linear-gradient(to right, #00ff66, #00E5FF);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            filter: drop-shadow(0 5px 15px rgba(255, 65, 108, 0.4));
+            filter: drop-shadow(0 5px 15px rgba(0, 255, 102, 0.4));
             animation: float 3s ease-in-out infinite;
         }
 
@@ -52,11 +52,12 @@
             margin-bottom: 20px;
             text-transform: uppercase;
             letter-spacing: 2px;
+            color: #00ff66;
         }
 
         p {
             font-size: 16px;
-            color: #ccc;
+            color: #aaa;
             margin-bottom: 30px;
             line-height: 1.6;
         }
@@ -64,19 +65,20 @@
         .btn {
             display: inline-block;
             padding: 12px 30px;
-            background: #ff4b2b;
-            color: white;
+            background: #00ff66;
+            color: #050505;
             text-decoration: none;
             border-radius: 50px;
             font-weight: 600;
             transition: 0.3s all ease;
-            box-shadow: 0 10px 20px rgba(255, 75, 43, 0.3);
+            box-shadow: 0 10px 20px rgba(0, 255, 102, 0.2);
         }
 
         .btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 15px 25px rgba(255, 75, 43, 0.5);
-            background: #ff416c;
+            box-shadow: 0 15px 25px rgba(0, 255, 102, 0.4);
+            background: #00E5FF;
+            color: #050505;
         }
 
         @keyframes float {
@@ -88,10 +90,10 @@
         .circle {
             position: absolute;
             border-radius: 50%;
-            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            background: linear-gradient(45deg, #00ff66, #005522);
             z-index: -1;
             filter: blur(80px);
-            opacity: 0.5;
+            opacity: 0.3;
         }
     </style>
 </head>
@@ -102,7 +104,7 @@
 
     <div class="container">
         <h1>404</h1>
-        <h2>¡Chin! Te perdiste.</h2>
+        <h2> Esta pagina esta en construccion</h2>
         <p>La página que buscas no existe o se fue por unos tacos y ya no regresó. Mejor volvamos al inicio.</p>
         <a href="index.html" class="btn">Sacarme de aquí</a>
     </div>
