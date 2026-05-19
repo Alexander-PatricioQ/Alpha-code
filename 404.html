@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | Te perdiste, compa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #0f0c29;
+            background: linear-gradient(135deg, #24243e, #302b63, #0f0c29);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 25px 45px rgba(0,0,0,0.2);
+            max-width: 500px;
+            width: 90%;
+        }
+
+        h1 {
+            font-size: 120px;
+            font-weight: 800;
+            margin-bottom: 0;
+            background: linear-gradient(to right, #ff416c, #ff4b2b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 5px 15px rgba(255, 65, 108, 0.4));
+            animation: float 3s ease-in-out infinite;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #ccc;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #ff4b2b;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: 0.3s all ease;
+            box-shadow: 0 10px 20px rgba(255, 75, 43, 0.3);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 25px rgba(255, 75, 43, 0.5);
+            background: #ff416c;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        /* Decoración de fondo */
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            z-index: -1;
+            filter: blur(80px);
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="circle" style="width: 300px; height: 300px; top: -100px; left: -100px;"></div>
+    <div class="circle" style="width: 200px; height: 200px; bottom: -50px; right: -50px;"></div>
+
+    <div class="container">
+        <h1>404</h1>
+        <h2>¡Chin! Te perdiste.</h2>
+        <p>La página que buscas no existe o se fue por unos tacos y ya no regresó. Mejor volvamos al inicio.</p>
+        <a href="index.html" class="btn">Sacarme de aquí</a>
+    </div>
+
+</body>
+</html>
